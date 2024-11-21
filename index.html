@@ -9,15 +9,24 @@
 <body>
 
 	<nav>
-			<a >MGEXP</a>
+		<p style="font-size: 35px;">MGEXP</p>	
 		<ul>
-			<li><a href="#jogos">Jogos</a></li>
-			<li><a href="#sobre">Sobre</a></li
-//too lazy to change
-
+			
+        <li><a onclick="scrollToSection('jogos')">Jogos</a></li>
+	<li><a onclick="scrollToSection('sobre')">Sobre</a></li>
 
 		</ul>
+
+    <script>
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 	</nav>
+
 
 <header id="topo">
 </a>
@@ -25,8 +34,7 @@
 
 <section id="sobre"> 
 	<h2>Sobre</h2>
-	<p>jogos epicos insanos</p>
-
+	<p style="font-size: 35px;">O Multiplayer Game Exp é um evento organizado pela escola Senac que celebra o talento e a criatividade dos alunos do 3º B. Inspirado nos grandes eventos de premiação, ele destaca jogos desenvolvidos pelos estudantes, proporcionando uma experiência imersiva e interativa.</p>	
 
 </section>
 
@@ -41,7 +49,6 @@
 	<img src="img/ponte.jpg">
 
 </section>
-
 
 </body>
 </html>
