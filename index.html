@@ -3,9 +3,212 @@
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<style>
+	/* CORPO */
+
+body {
+	font-family: Nunito, sans-serif;
+	color: #000000
+}
+
+h1, h2, h3 {
+	font-family: Asap, sans-serif;
+	color: #000000
+
+}
+
+.botao {
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #191970;
+	font-size: .9em
+	border-radius: 3px;
+}
+
+
+/* Navegação */
+
+     	nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FFFFFF
+        width: 100%;
+        padding: 0px;
+	background: white;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+	nav ul {
+	margin-right: 15px;
+        cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	width: 100%
+	}
+
+	
+nav ul li {
+	text-align: center;
+	width: 100%
+
+}
+
+/*Cabeçalho*/
+
+header {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("../img/camera.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 200px;
+
+}
+
+header h1{
+
+color: #FFFFFF
+}
+
+header p{
+	margin-bottom: 2em;
+
+}
+
+#sobre {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 250px 250px 260px 260px;
+		background-color: #FFFFFF;
+		color: #000000;
+}
+
+#sobre h2 {
+	color: #000000
+
+}
+#sobre p{
+margin-bottom: 2.5em;
+max-width: 1000px;
+
+}
+
+#sobre .botao {
+
+	background-color: #f1f1f1;
+	color: #1c1c1c;
+}
+
+
+/*rodapé*/
+
+footer {
+		text-align: center;
+		padding: 10px;
+		background-color: #191970;
+		color: #FFFFFF;
+}
+
+footer a {
+		text-decoration: none;
+		color: #00FFFF;
+}
+
+@media screen and (min-width: 768px) {
+
+	/*nav*/
+
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+
+	nav ul {
+
+		flex-direction: row;
+		width: 70%
+
+
+	}
+
+	/*Cabeçalho*/
+
+	header {
+			height: 600px;
+			height: 60vh;
+			justify-content: center;
+	}
+
+/*Sobre*/
+
+#sobre {
+	height: 250px;
+	height: 30vh;
+	justify-content: center;
+	min-height: 250px
+}
+
+#jogos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 20px;
+}
+
+#jogos h2 {
+			margin-bottom: 20px;
+}
+
+#jogos img {
+
+	width: 100%;
+}
+#jogos {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+	#jogos h2{
+			width: 100%;
+			text-align:center;
+	}
+
+#jogos img {
+
+	width: 33.3333333%;
+}
+
+    a img {
+      border: 2px solid transparent;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    a img:hover {
+      transform: scale(1.05); /* Slight zoom effect */
+      border-color: #007BFF; /* Change border color on hover */
+    }
+
+
+}
+
+
 	<title>MGEXP</title>
 </head>
+</style>
 <body>
 
 	<nav>
